@@ -1,0 +1,113 @@
+.image {
+    width: 130px;
+    height: 80px;
+    border: 90%;
+   
+}
+.search-bar {
+    float: left; 
+    margin: 5px 5px 0 0;
+    display: flex; 
+
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    flex: 1;
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+.cart-icon {
+    float: left; 
+    margin: 5px 5px 0 0; 
+}
+
+                   
+.navbar {
+    border-bottom: 1px solid; 
+}
+.active-link {
+    border-bottom: 2px solid #fd0a0a; 
+}
+
+.card-hover:hover {
+
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.btn-glass {
+    background-color: rgba(4, 4, 4, 0.961); 
+    color: #f6f5f5; 
+    border: black; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn-glass:hover {
+    background-color: rgba(250, 1, 1, 0.5); 
+}
+
+.about-us {
+    max-width: 50%; 
+}
+
+.policies {
+    max-width: 50%; 
+}
+
+.instagram-icon {
+    transition: transform 0.3s ease; 
+}
+
+.instagram-icon:hover {
+    transform: scale(1.2); 
+}
+
+
+c {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    transition: color,background-color,padding;
+    color: #000;
+}
+
+c:hover, c:focus, c:active {
+    color: #999;
+    text-decoration: none;
+}
+
+c::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color ,transform;
+}
+
+c:active::before {
+    background-color: #000;
+}
+
+c:hover::before, c:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
